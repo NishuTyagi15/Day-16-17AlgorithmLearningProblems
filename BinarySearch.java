@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class BinarySearch {
 	public static void main(String[] args) {
 		Scanner S = new Scanner(System.in);
-		String str = DataAlgorithm.getFromFile("C:\\Users\\tyagi\\eclipse-workspace\\DataStrLearningProblems\\src\\Names.txt");
+		String str = DataAlgorithm.getFromFile
+				     ("C:\\Users\\tyagi\\eclipse-workspace\\DataStrLearningProblems\\src\\searchAndSorting\\Names");
 		String[] strArr = str.split(",");
-		DataAlgorithm.stringInsertionSort(strArr);
+		DataAlgorithm.bubbleSort(strArr);
 		DataAlgorithm.printStringArr(strArr);
 		System.out.println("Enter key to search : ");
 		String key = S.next();
