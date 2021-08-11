@@ -2,9 +2,6 @@ package searchAndSorting;
 
 import java.util.Date;
 
-import RegexAndDataStrProblems.RegexTest;
-import RegexAndDataStrProblems.UserDetails;
-
 public class Regex {
 	public static void main(String args[]) {
 		RegexTest r = new RegexTest();
@@ -27,7 +24,7 @@ public class Regex {
 		
 		//Setting current date
 		user.setdate(r.getFormatedDate(new Date()));
-		System.out.println(r.convertString(user,r.getFileText("C:\\Users\\tyagi\\eclipse-workspace\\DataStrLearningProblems\\src\\RegexAndDataStrProblems\\File")));	
+		System.out.println(r.convertString(user,r.getFileText("C:\\Users\\tyagi\\eclipse-workspace\\DataStrLearningProblems\\src\\searchAndSorting\\File")));	
 	}
 
 }
