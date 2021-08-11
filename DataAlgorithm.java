@@ -149,4 +149,19 @@ public class DataAlgorithm {
 		}
 		return true;
 	}
+	
+	public boolean isPalindrome(int num) {
+		int rem, sum = 0;
+		int temp = num;
+		while (num > 0) {
+			rem = num % 10;
+			sum = (sum * 10) + rem;
+			num = num / 10;
+		}
+		if (temp == sum) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 }
